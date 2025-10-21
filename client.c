@@ -41,8 +41,6 @@ int main(int argc, char *argv[]){
     char szTx[RCVBUFSIZE], recvBuff[RCVBUFSIZE]; // STRINGA DI TRASMISSIONE
     int txSize, bytesRcvd, totalBytesRcvd;
 
-    char ch;
-
     // ----- IMPOSTO DEI VALORI DI DEFAULT ----- 
     strcpy(szIPServer, "127.0.0.1");
     strcpy(szTx, "TRUGLIA");
@@ -87,10 +85,6 @@ int main(int argc, char *argv[]){
     
 
     // ----- LOGICA ----- 
-    ch = 0;
-
-    char isFirst = 1;
-
     while (1){
         
         printf("Inserisci stringa (x per terminare): ");
